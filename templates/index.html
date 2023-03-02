@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube Transcript Summarizer</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>YouTube Transcript Summarizer</h1>
+    <form method="POST">
+		<div id="inp">
+			<label for="link">Enter the YouTube video link:</label><br>
+      <input type="text" id="link" name="link"><br>
+		</div> <br>
+    <button type="button" onclick="window.location.href='http://127.0.0.1:5000'">Clear</button>
+    <button type="submit">Submit</button> <br> <br>
+    <button type="button" id="ts">Convert To Speech</button>
+    <button type="button" id="reset">Reset Speech</button>
+    </form>
+    <div id="summary">
+      <textarea name="s1" id="s1" placeholder="The Summarized text will appear here...">{{value}}</textarea>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='function.js') }}"></script>
+</html>

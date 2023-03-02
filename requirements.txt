@@ -1,0 +1,6 @@
+flask
+sumy
+youtube_transcript_api
+re
+gtts
+nltk
