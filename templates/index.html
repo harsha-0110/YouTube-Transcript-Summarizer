@@ -3,24 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>YouTube Transcript Summarizer</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   </head>
   <body>
-    <h1>YouTube Transcript Summarizer</h1>
-    <form method="POST">
-		<div id="inp">
-			<label for="link">Enter the YouTube video link:</label><br>
-      <input type="text" id="link" name="link"><br>
-		</div> <br>
-    <button type="button" onclick="window.location.href='http://127.0.0.1:5000'">Clear</button>
-    <button type="submit">Submit</button> <br> <br>
-    <button type="button" id="ts">Convert To Speech</button>
-    <button type="button" id="reset">Reset Speech</button>
-    </form>
-    <div id="summary">
-      <textarea name="s1" id="s1" placeholder="The Summarized text will appear here...">{{value}}</textarea>
-    </div>
+    <h1><i class='fab fa-youtube' style='font-size:48px;color:red'></i>YouTube Transcript Summarizer</h1><br><br>
+      <div id="input">
+        <form method="POST">
+          <div id="inp">
+            <label for="link" id="linkLabel">Youtube Video Link:</label><br>
+            <input type="text" id="link" name="link" placeholder="Paste Here"><br>
+          </div> <br>
+          <button type="button" id="clear" onclick="clear()">Clear</button>
+          <button type="submit" id="submit">Submit</button> <br> <br>
+          <button type="button" id="ts">Convert To Speech</button>
+          <button type="button" id="reset">Reset Speech</button> <br> <br>
+          <label for="method" id="methodLabel">Summarization Method:</label>
+          <select id="method" name="method">
+            <option value="nlp">NLP</option>
+            <option value="ml">ML</option>
+          </select>
+          <p>Project by Harshavardhan and Surya</p>
+        </form>
+      </div>
+      <div id="summary">
+        <textarea name="s1" id="s1" placeholder="The Summarized text will appear here...">{{value}}</textarea>
+      </div>
   </body>
   <script src="{{ url_for('static', filename='function.js') }}"></script>
 </html>
