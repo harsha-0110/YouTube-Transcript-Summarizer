@@ -39,7 +39,7 @@ def summarize(text):
 
   summary = ''
   for sentence in sentences:
-    if (sentence in sentenceValue) and (sentenceValue[sentence] > (1.3 * average)):
+    if (sentence in sentenceValue) and (sentenceValue[sentence] > (1.2 * average)):
       summary += " " + sentence
     
   return summary
@@ -99,7 +99,7 @@ def index():
     elif method == 'ml':
       summary = summarize_text(input_text)
     nsw = len(summary.split())
-    summary += "\n\n" + "No. of original words = " + str(now) + "\n\n" + "No. of words after Summrization: " + str(nsw)
+    summary += "\n\n" + "No. of original words = " + str(now) + "\n\n" + "No. of words after Summarization: " + str(nsw)
     if nsw == 0:
       final = "No Transcript found."
     else:

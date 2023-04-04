@@ -22,6 +22,7 @@ body{
     outline: none;
     width: 97%;
     height: 60vh;
+    text-align: justify;
   }
 }
 
@@ -44,6 +45,7 @@ body{
     outline: none;
     width: 95%;
     height: 60vh;
+    text-align: justify;
   }
 }
 h1 {
@@ -104,19 +106,19 @@ button[id="submit"], button[id="reset"]{
   float: right;
 }
 
-#linkLabel
-  {
-    color: rgb(0, 0, 0);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  ::placeholder
-  {
-    padding-left: 10px;
-    color: gray;
-  }
-  #methodLabel, p{
-    color: whitesmoke;
-    font-style: italic;
-    font-size: larger;
-    font-weight: bold;
-  }
+#linkLabel{
+  color: rgb(0, 0, 0);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+::placeholder{
+  padding-left: 10px;
+  color: gray;
+}
+
+#methodLabel, p{
+  color: whitesmoke;
+  font-style: italic;
+  font-size: larger;
+  font-weight: bold;
+}
