@@ -4,10 +4,10 @@ This is a web application that takes a YouTube video link, generates its transcr
 
 Installation
 Clone the repository:
--`git clone https://github.com/harsha-0110/YouTube-Transcript-Summarizer.git`
+- `git clone https://github.com/harsha-0110/YouTube-Transcript-Summarizer.git`
 
 Install the required dependencies using pip:
--`pip install -r requirements.txt`
+- `pip install -r requirements.txt`
 
 Usage
 - Run the application:
