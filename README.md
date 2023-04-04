@@ -7,12 +7,12 @@ Clone the repository:
 git clone https://github.com/harsha-0110/YouTube-Transcript-Summarizer.git
 
 Install the required dependencies using pip:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Usage
 * Run the application:
-    python app.py
-* Open a web browser and go to http://localhost:5000/.
+    `python app.py`
+* Open a web browser and go to `http://localhost:5000/`.
 * Enter a YouTube video link and select the summarization method you want to use (NLP or ML).
 * Click on the "Summarize" button and wait for the summary to be generated.
 * The summary will be displayed on the web page along with the number of original words and the number of words after summarization.
