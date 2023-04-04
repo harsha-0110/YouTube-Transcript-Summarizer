@@ -1,4 +1,5 @@
 Youtube Transcript Summarizer:
+
 This is a web application that takes a YouTube video link, generates its transcript and provides a summarized version of the transcript using two methods: Natural Language Processing (NLP) and Machine Learning (ML). The summary can be useful for quickly understanding the main points of a long video without having to watch the entire video.
 
 Installation
